@@ -10,7 +10,6 @@ public enum Moneda {
 
     }
     public double getvalor() {
-    return valor;
-
+        return valor;
     }
 }
