@@ -1,4 +1,6 @@
-package conversionmoneda;
+package mx.itson.edu.conversionmoneda.user;
+
+import mx.itson.edu.conversionmoneda.config.Moneda;
 
 public class Cliente {
     private double cantidad;

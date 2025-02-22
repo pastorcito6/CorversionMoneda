@@ -1,6 +1,6 @@
-package conversionmoneda;
+package mx.itson.edu.conversionmoneda.service;
 
-enum OperacionAritmetica {
+public enum Artimetica {
     SUMAR {
         @Override
         public double calcular(double a, double b) {
