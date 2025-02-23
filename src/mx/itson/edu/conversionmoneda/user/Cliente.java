@@ -2,15 +2,10 @@ package mx.itson.edu.conversionmoneda.user;
 
 import mx.itson.edu.conversionmoneda.config.Moneda;
 
-public class Cliente {
+public abstract class Cliente {
     private double cantidad;
     private Moneda tipoMoneda;
-
-    public Cliente(double cantidad, Moneda tipoMoneda) {
-        this.cantidad = cantidad;
-        this.tipoMoneda = tipoMoneda;
-    }
-
+    //
     public Moneda getTipoMoneda() {
         return tipoMoneda;
     }

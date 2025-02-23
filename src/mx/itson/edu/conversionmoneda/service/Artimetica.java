@@ -41,5 +41,5 @@ public enum Artimetica {
     }
     ;
 
-    public abstract double calcular(double a, double b);
+    public abstract double calcular(double a, double b);//metodo abstracto
 }
