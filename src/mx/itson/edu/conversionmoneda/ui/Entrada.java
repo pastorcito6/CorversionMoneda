@@ -30,7 +30,8 @@ public class Entrada {
     //genera el precio de moneda elegida
     public void EntradaCambioMoneda(double precio) {
         conversiones.setPrecioMoneda(precio);
-        conversiones.setCantidad();
+        System.out.println(conversiones.getPrecioMoneda());
+        conversiones.setCantidad(clientes.getDinero());
     }
     //genera el total
     public void Entradatotal(){
@@ -42,14 +43,14 @@ public class Entrada {
     }
     //banner app
     public void Banner(){
-        System.out.println("" +
-                "#     #                                    #     # #     # ######  \n" +
-                "##   ##  ####  #    # ###### #   #         #     # #     # #     # \n" +
-                "# # # # #    # ##   # #       # #          #     # #     # #     # \n" +
-                "#  #  # #    # # #  # #####    #           ####### #     # ######  \n" +
-                "#     # #    # #  # # #        #           #     # #     # #     # \n" +
-                "#     # #    # #   ## #        #           #     # #     # #     # \n" +
-                "#     #  ####  #    # ######   #           #     #  #####  ######  \n" +
-                "                                   #######            ");
+        System.out.println("""
+                #     #                                    #     # #     # ###### \s
+                ##   ##  ####  #    # ###### #   #         #     # #     # #     #\s
+                # # # # #    # ##   # #       # #          #     # #     # #     #\s
+                #  #  # #    # # #  # #####    #           ####### #     # ###### \s
+                #     # #    # #  # # #        #           #     # #     # #     #\s
+                #     # #    # #   ## #        #           #     # #     # #     #\s
+                #     #  ####  #    # ######   #           #     #  #####  ###### \s
+                                                   #######           \s""");
     }
 }

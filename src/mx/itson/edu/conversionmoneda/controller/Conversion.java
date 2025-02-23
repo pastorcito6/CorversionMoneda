@@ -22,8 +22,8 @@ public class Conversion {
         return cantidad;
     }
     //
-    public void setCantidad() {
-        cantidad = Artimetica.DIVIDIR.calcular(getPrecioMoneda(),getPrecioMoneda());
+    public void setCantidad(double dinero) {
+        cantidad = Artimetica.DIVIDIR.calcular(getPrecioMoneda(),dinero);
     }
 
     public double getTotal() {
