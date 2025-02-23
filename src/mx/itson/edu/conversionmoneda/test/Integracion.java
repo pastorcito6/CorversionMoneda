@@ -6,6 +6,12 @@ public class Integracion {
     Entrada entrada = new Entrada();
 
     public void IniciarConversion() {
-        entrada.EntradaMoneda();
+        try {
+            entrada.EntradaMoneda();
+        }
+        catch (Exception e) {
+            System.out.println("Elige opcion valida");
+            IniciarConversion();
+        }
     }
 }

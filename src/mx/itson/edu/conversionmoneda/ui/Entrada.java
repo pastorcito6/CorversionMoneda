@@ -14,9 +14,20 @@ public class Entrada {
     Menu menu = new Menu();
     //verificar dinero
     public void EntradaDinero() {
-        Banner();
-        System.out.println("Ingrese su dinero:");
-        clientes.setDinero(sc.nextDouble());
+        try {
+            Banner();
+            System.out.println("Ingrese el dinero su dinero mayor a 22 MX");
+            double dinero = sc.nextDouble();
+            if (dinero >22){
+                clientes.setDinero(dinero);
+            }
+            else{
+                EntradaDinero();
+            }
+        }
+        catch (Exception e) {
+            System.out.println("Ingrese dinero solamente");
+        }
     }
     //elige la moneda
     public void EntradaMoneda() {

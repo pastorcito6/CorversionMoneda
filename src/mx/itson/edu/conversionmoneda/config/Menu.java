@@ -33,8 +33,6 @@ public class Menu {
                 entrada.Entradatotal();
                 entrada.EntradaCambio();
                 break;
-            default:
-                // code block
         }
     }
 }
