@@ -20,18 +20,18 @@ public class Menu {
                 break;
             case 2:
                 // Euro
-                Moneda moneda2 = Moneda.EU;
-                entrada.EntradaCambioMoneda(moneda2.getvalor());
-                salida.MostrarCantidad(moneda2);
-                salida.MostrarResumen();
+//                Moneda moneda2 = Moneda.EU;
+//                entrada.EntradaCambioMoneda(moneda2.getvalor());
+//                salida.MostrarCantidad(moneda2);
+//                salida.MostrarResumen();
 
                 break;
             case 3:
                 // Mexicano
-                Moneda moneda3 = Moneda.MX;
-                entrada.EntradaCambioMoneda(moneda3.getvalor());
-                salida.MostrarCantidad(moneda3);
-                salida.MostrarResumen();
+//                Moneda moneda3 = Moneda.MX;
+//                entrada.EntradaCambioMoneda(moneda3.getvalor());
+//                salida.MostrarCantidad(moneda3);
+//                salida.MostrarResumen();
                 break;
             default:
                 // code block

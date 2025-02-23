@@ -6,7 +6,6 @@ public class Integracion {
     Entrada entrada = new Entrada();
 
     public void IniciarConversion() {
-        entrada.EntradaDinero();
         entrada.EntradaMoneda();
     }
 }
