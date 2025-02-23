@@ -15,6 +15,7 @@ public class Menu {
                 entrada.EntradaCambioMoneda(moneda1.getvalor());
                 entrada.Entradatotal();
                 entrada.EntradaCambio();
+                entrada.Banner();
                 salida.MostrarCantidad(moneda1);
                 salida.MostrarResumen();
                 break;
