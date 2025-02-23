@@ -15,14 +15,11 @@ public class Entrada {
     //verificar dinero
     public void EntradaDinero() {
         try {
-            Banner();
-            System.out.println("Ingrese el dinero su dinero mayor a 22 MX");
-            double dinero = sc.nextDouble();
-            if (dinero >22){
+            double dinero;
+            System.out.println("Ingrese el dinero su dinero mayor a 80 MX");
+            dinero = sc.nextDouble();
+            if (dinero >80){
                 clientes.setDinero(dinero);
-            }
-            else{
-                EntradaDinero();
             }
         }
         catch (Exception e) {
@@ -31,8 +28,13 @@ public class Entrada {
     }
     //elige la moneda
     public void EntradaMoneda() {
-        System.out.println("Ingrese la moneda que desea comprar:\n[1] Dollar\n[2] Euro\n[3] Dinar Kuwaiti");
-        menu.MenuOpciones(sc.nextInt());
+        try {
+            System.out.println("Ingrese la moneda que desea comprar:\n[1] Dollar\n[2] Euro\n[3] Dinar Kuwaiti");
+            menu.MenuOpciones(sc.nextInt());
+        }
+        catch (Exception e) {
+            System.out.println("Error ingrese moneda valida");
+        }
     }
     //genera el precio de moneda elegida
     public void EntradaCambioMoneda(double precioMoneda) {
