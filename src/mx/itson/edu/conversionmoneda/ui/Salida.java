@@ -9,5 +9,8 @@ package mx.itson.edu.conversionmoneda.ui;
  * @author DELL
  */
 public class Salida {
-    
+    //se necesita crear una salida de datos donde se vea lo se le da al cliente
+    //generar cambio
+
+    //tipo de cambio
 }

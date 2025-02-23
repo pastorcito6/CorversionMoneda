@@ -8,7 +8,6 @@ public enum Conversion {
         @Override
         public double calcular(double moneda, double dinero) {
             double cantidad = Artimetica.DIVIDIR.calcular(moneda, dinero);
-
             return cantidad;
         }
 
