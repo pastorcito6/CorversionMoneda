@@ -29,8 +29,8 @@ public class Entrada {
     }
     //genera el precio de moneda elegida
     public void EntradaCambioMoneda(double precio) {
+        System.out.println(precio);
         conversiones.setPrecioMoneda(precio);
-        System.out.println(conversiones.getPrecioMoneda());
         conversiones.setCantidad(clientes.getDinero());
     }
     //genera el total
