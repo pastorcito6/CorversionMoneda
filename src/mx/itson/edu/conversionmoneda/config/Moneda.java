@@ -5,7 +5,7 @@ public enum Moneda {
     EU(21.36),
     MX(20);
 
-    private double valor;
+    private final double valor;
 
     Moneda(double valor) {
         this.valor = valor;

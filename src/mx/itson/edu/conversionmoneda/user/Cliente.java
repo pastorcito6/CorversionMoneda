@@ -1,25 +1,13 @@
 package mx.itson.edu.conversionmoneda.user;
 
-import mx.itson.edu.conversionmoneda.config.Moneda;
+public class Cliente {
+    private double dinero;
 
-public abstract class Cliente {
-    private double cantidad;
-    private Moneda tipoMoneda;
-    //
-    public Moneda getTipoMoneda() {
-        return tipoMoneda;
+    public double getDinero() {
+        return dinero;
     }
 
-    public void setTipoMoneda(Moneda tipoMoneda) {
-        this.tipoMoneda = tipoMoneda;
+    public void setDinero(double dinero) {
+        this.dinero = dinero;
     }
-
-    public double getCantidad() {
-        return cantidad;
-    }
-
-    public void setCantidad(double cantidad) {
-        this.cantidad = cantidad;
-    }
-    
 }

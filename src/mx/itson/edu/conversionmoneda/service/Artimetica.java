@@ -27,16 +27,9 @@ public enum Artimetica {
         @Override
         public double calcular(double moneda, double dinero) {
             //operacion para obtener la cantidad que me alcanza
-            double cantidad = moneda / dinero; //20/130 = 6
-//            //obtener total de precio de la moneda
-//            MULTIPLICAR.calcular(moneda, cantidad);//=120
-//            //obtiene el cambio
-//            RESTAR.calcular(
-//                    //obtener total de precio de moneda
-//                    MULTIPLICAR.calcular(moneda, cantidad),
-//                    dinero);
-//            //obtiene la cantidad de moneda que me alcanza
-            return cantidad;//=6
+            double cantidad = moneda / dinero; //
+//          //obtiene la cantidad de moneda que me alcanza
+            return cantidad;
         }
     }
     ;
