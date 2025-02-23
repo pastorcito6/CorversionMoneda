@@ -9,23 +9,26 @@ public enum Artimetica {
     },
     RESTAR {
         @Override
-        public double calcular(double total, double dinero) {
-            return total - dinero;
+        public double calcular(double a, double b) {
+            return a - b;
         }
     },
     MULTIPLICAR {
         @Override
-        public double calcular(double moneda, double cantidad) {
-            return moneda * cantidad;//120
+        public double calcular(double a, double b) {
+            return a * b;
         }
     },
     DIVIDIR {
         @Override
-        public double calcular(double moneda, double dinero) {
-            return moneda / dinero;
+        public double calcular(double a, double b) {
+            if (b == 0) {
+                throw new ArithmeticException("No se puede dividir por cero");
+            }
+            double resultado = a/b;
+            return resultado;
         }
-    }
-    ;
+    };
 
     public abstract double calcular(double a, double b);//metodo abstracto
 }

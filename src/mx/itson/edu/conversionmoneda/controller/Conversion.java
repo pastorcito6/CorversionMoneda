@@ -1,18 +1,20 @@
 package mx.itson.edu.conversionmoneda.controller;
 
 import mx.itson.edu.conversionmoneda.service.Artimetica;
+import mx.itson.edu.conversionmoneda.user.Cliente;
 
 public class Conversion {
     double precioMoneda;
     double cantidad;
     double total;
     double cambio;
-    //
+    //Paso la prueba
     public double getPrecioMoneda() {
         return precioMoneda;
     }
 
     public void setPrecioMoneda(double precioMoneda) {
+        System.out.println("precioMoneda: "+precioMoneda);
         this.precioMoneda = precioMoneda;
     }
 
@@ -22,8 +24,12 @@ public class Conversion {
         return cantidad;
     }
     //
-    public void setCantidad(double dinero) {
-        cantidad = Artimetica.DIVIDIR.calcular(getPrecioMoneda(),dinero);
+    public void setCantidad( double dinero, double precio) {
+        if (getPrecioMoneda() == 0) {
+            throw new ArithmeticException("Error: No se puede dividir entre cero");
+        }
+        cantidad = Artimetica.DIVIDIR.calcular(dinero, precio);
+        System.out.println("setCantidad: " + cantidad);
     }
 
     public double getTotal() {
