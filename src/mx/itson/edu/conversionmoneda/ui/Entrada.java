@@ -9,10 +9,11 @@ public class Entrada extends Cliente {
 
     //
     public void EntradaDinero() {
-        System.out.println("Verificar dinero:");
+        System.out.println("Ingrese su dinero:");
         setCantidad(sc.nextDouble());
     }
     public void EntradaMoneda() {
-        System.out.println("Verificar moneda:\n[1] Dollar\n[2] Euro\n");
+     //
+        System.out.println("Ingrese su moneda:\n[1] Dollar\n[2] Euro\n[3]Mexicano");
     }
 }
