@@ -13,18 +13,18 @@ import mx.itson.edu.conversionmoneda.controller.Conversion;
  */
 public class Salida {
     //se necesita crear una salida de datos donde se vea lo se le da al cliente
-    Conversion[] conversion = new Conversion[0];
+    Conversion conversiones = new Conversion();
     //mostrar cantidad
     public void MostrarCantidad(Moneda moneda) {
-        System.out.println("Usted compro: "+conversion[0].getCantidad()+" "+moneda+" con el valor de C/U "+conversion[0].getPrecioMoneda());
+        System.out.println("Usted compro: "+conversiones.getCantidad()+" "+moneda+" con el valor de C/U "+conversiones.getPrecioMoneda());
     }
     //generar total
     public void Mostrartotal(){
-        System.out.println("por el precio total de"+conversion[0].getTotal());
+        System.out.println("por el precio total de"+conversiones.getTotal());
     }
     //genera el cambio
     public void MostrarCambio(){
-        System.out.println(conversion[0].getCambio());
+        System.out.println(conversiones.getCambio());
     }
 
     public void MostrarResumen(){
