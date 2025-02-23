@@ -13,10 +13,10 @@ public class Menu {
                 Moneda moneda1 = Moneda.DO;
                 //Se toma el valor del dolar
                 entrada.EntradaCambioMoneda(moneda1.getvalor());
+                salida.MostrarCantidad(moneda1);
                 entrada.Entradatotal();
                 entrada.EntradaCambio();
-                salida.MostrarCantidad(moneda1);
-//                salida.MostrarResumen();
+                salida.Mostrartotal();
                 break;
             case 2:
                 // Euro

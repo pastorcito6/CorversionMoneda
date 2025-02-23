@@ -8,23 +8,15 @@ import mx.itson.edu.conversionmoneda.controller.Conversion;
  * @author DELL
  */
 public class Salida {
-    //se necesita crear una salida de datos donde se vea lo se le da al cliente
     Conversion conversiones = new Conversion();
     //mostrar cantidad
     public void MostrarCantidad(Moneda moneda) {
-        System.out.println("Usted compro: "+conversiones.getCantidad()+" "+moneda+" con el valor de C/U: "+conversiones.getPrecioMoneda());
+        System.out.println("Conversion de: "+moneda);
     }
     //generar total
     public void Mostrartotal(){
-        System.out.println("por el precio total de "+conversiones.getTotal());
+        System.out.println("test: "+conversiones.getTotal());
     }
     //genera el cambio
-    public void MostrarCambio(){
-        System.out.println(conversiones.getCambio());
-    }
 
-    public void MostrarResumen(){
-        Mostrartotal();
-        MostrarCambio();
-    }
 }

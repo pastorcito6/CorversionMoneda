@@ -13,7 +13,7 @@ public class Conversion {
     }
 
     public void setPrecioMoneda(double precioMoneda) {
-        System.out.println("el precio de la moneda es: "+precioMoneda);
+        System.out.println("Precio moneda actual: "+precioMoneda);
         this.precioMoneda = precioMoneda;
     }
 
@@ -26,7 +26,7 @@ public class Conversion {
     public void setCantidad( double dineroCliente) {
         //paso
         cantidad = (int) Math.floor(Artimetica.DIVIDIR.calcular(dineroCliente, getPrecioMoneda()));
-        System.out.println("Resultado division: "+cantidad);
+        System.out.println("Usted compro: "+cantidad);
     }
 
     public double getTotal() {
@@ -37,7 +37,7 @@ public class Conversion {
         //paso
         total = Artimetica.MULTIPLICAR.calcular(getPrecioMoneda(),getCantidad());
         total = Math.round(total);
-        System.out.println("Resultado multiplicacion: "+total);
+        System.out.println("Por el total de: "+total);
     }
 
     public double getCambio() {
@@ -47,6 +47,6 @@ public class Conversion {
     public void setCambio(double dineroCliente) {
         cambio = Artimetica.RESTAR.calcular(dineroCliente,getTotal());
         cambio = Math.round(cambio);
-        System.out.println("Resultado restar: "+cambio);
+        System.out.println("Su cambio es: "+cambio);
     }
 }

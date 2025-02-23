@@ -8,7 +8,7 @@ public class Cliente {
     }
 
     public void setDinero(double dinero) {
-        System.out.println("dinero del cliente: "+dinero);
+        System.out.println("Dinero recibido: "+dinero);
         this.dinero = dinero;
     }
 }
