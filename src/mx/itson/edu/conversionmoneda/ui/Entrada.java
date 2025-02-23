@@ -29,7 +29,7 @@ public class Entrada {
     public void EntradaCambioMoneda(double precio) {
         conversiones.setPrecioMoneda(precio);
         //no genera
-        conversiones.setCantidad(clientes.getDinero(),precio);
+        conversiones.setCantidad(clientes.getDinero());
     }
     //genera el total
     public void Entradatotal(){

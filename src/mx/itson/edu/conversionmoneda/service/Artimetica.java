@@ -25,10 +25,9 @@ public enum Artimetica {
             if (b == 0) {
                 throw new ArithmeticException("No se puede dividir por cero");
             }
-            double resultado = a/b;
-            return resultado;
+            return a/b;
         }
     };
 
-    public abstract double calcular(double a, double b);//metodo abstracto
+    public abstract double calcular(double a, double b);
 }
