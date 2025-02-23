@@ -16,22 +16,22 @@ public class Menu {
                 salida.MostrarCantidad(moneda1);
                 entrada.Entradatotal();
                 entrada.EntradaCambio();
-                salida.Mostrartotal();
                 break;
             case 2:
                 // Euro
-//                Moneda moneda2 = Moneda.EU;
-//                entrada.EntradaCambioMoneda(moneda2.getvalor());
-//                salida.MostrarCantidad(moneda2);
-//                salida.MostrarResumen();
-
+                Moneda moneda2 = Moneda.EU;
+                entrada.EntradaCambioMoneda(moneda2.getvalor());
+                salida.MostrarCantidad(moneda2);
+                entrada.Entradatotal();
+                entrada.EntradaCambio();
                 break;
             case 3:
                 // Mexicano
-//                Moneda moneda3 = Moneda.MX;
-//                entrada.EntradaCambioMoneda(moneda3.getvalor());
-//                salida.MostrarCantidad(moneda3);
-//                salida.MostrarResumen();
+                Moneda moneda3 = Moneda.RU;
+                entrada.EntradaCambioMoneda(moneda3.getvalor());
+                salida.MostrarCantidad(moneda3);
+                entrada.Entradatotal();
+                entrada.EntradaCambio();
                 break;
             default:
                 // code block
