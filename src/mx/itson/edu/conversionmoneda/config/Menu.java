@@ -16,7 +16,7 @@ public class Menu {
                 entrada.Entradatotal();
                 entrada.EntradaCambio();
                 salida.MostrarCantidad(moneda1);
-                salida.MostrarResumen();
+//                salida.MostrarResumen();
                 break;
             case 2:
                 // Euro

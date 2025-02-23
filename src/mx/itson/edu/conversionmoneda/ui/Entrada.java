@@ -15,7 +15,6 @@ public class Entrada {
 //        System.out.println("Ingrese su dinero:");
 //        double valorDinero = sc.nextDouble();
         clientes.setDinero(135.00);
-        System.out.println("getdiner: " + clientes.getDinero());
     }
     //elige la moneda
     public void EntradaMoneda() {
@@ -29,8 +28,6 @@ public class Entrada {
     public void EntradaCambioMoneda(double precioMoneda) {
         conversiones.setPrecioMoneda(precioMoneda);
         EntradaDinero();
-        //no genera
-        System.out.println("error al meter el dinero: "+clientes.getDinero());
         conversiones.setCantidad(clientes.getDinero());
     }
     //genera el total
