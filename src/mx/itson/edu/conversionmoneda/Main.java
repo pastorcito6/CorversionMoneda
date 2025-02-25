@@ -15,7 +15,7 @@ public class Main {
      */
     public static void main(String[] args) {
         Integracion integracion = new Integracion();
-        integracion.IniciarConversion();
+        integracion.iniciar();
     }
     
 }

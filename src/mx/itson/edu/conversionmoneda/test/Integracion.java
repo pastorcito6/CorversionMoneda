@@ -1,11 +1,21 @@
 package mx.itson.edu.conversionmoneda.test;
 
-import mx.itson.edu.conversionmoneda.ui.Entrada;
-
+import mx.itson.edu.conversionmoneda.config.Opciones;
 public class Integracion {
-    Entrada entrada = new Entrada();
-
-    public void IniciarConversion() {
-            entrada.EntradaMoneda();
+    Opciones opciones = new Opciones();
+    public void iniciar() {
+        banner();
+        opciones.operarMonedaDinero();
+    }
+    private void banner(){
+        System.out.println("""
+                #     #                                    #     # #     # ###### \s
+                ##   ##  ####  #    # ###### #   #         #     # #     # #     #\s
+                # # # # #    # ##   # #       # #          #     # #     # #     #\s
+                #  #  # #    # # #  # #####    #           ####### #     # ###### \s
+                #     # #    # #  # # #        #           #     # #     # #     #\s
+                #     # #    # #   ## #        #           #     # #     # #     #\s
+                #     #  ####  #    # ######   #           #     #  #####  ###### \s
+                                                   #######           \s""");
     }
 }
